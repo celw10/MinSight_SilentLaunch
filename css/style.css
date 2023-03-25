@@ -11,8 +11,8 @@
 html, body {
     padding: 0;
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: white;
   }
 
@@ -24,17 +24,16 @@ html, body {
 nav {
     display: flex;
     align-items: center;
-    margin: 2vw;
+    margin: 0.5em 1em 0.5em 1em;
 }
 nav h1 {
-    font-size: 24px;
+    font-size: 2rem;
+    margin: 0;
 }
 
 /* Container for page content */
 #container {
-    width: 80vw;
     align-items: center;
-    padding: 1vw;
     margin: auto;
 }
 
@@ -45,8 +44,7 @@ nav h1 {
 
 /* Pitch slides styling */
 #slideShow{
-    width: 50vw;
-    height: auto;
+    width: 65vw;
     position: relative;
     margin: auto;
 }
@@ -58,11 +56,11 @@ nav h1 {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
+    margin-top: -1em;
+    padding: 0.8em;
+    color: black;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1em;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -72,18 +70,18 @@ nav h1 {
     border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover{
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(187,187,187,0.5);
 }
 .dots{
     position: absolute;
-    width: 50vw;
-    bottom: 10px;
+    width: 65vw;
+    bottom: 0;
     text-align: center;
 }
 .dot{
-    height: 22px;
-    width: 22px;
-    margin: 5px 5px;
+    height: 1em;
+    width: 1em;
+    margin: 0.1em 0.1em;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -102,18 +100,23 @@ nav h1 {
 }
 /* Slide Images */
 .slideShowImages{
-    width: 50vw;
-    height: auto;
-    object-fit: cover;
+    width: 65vw;
     margin: auto;
     display: block;
 }
 
-/* Email Signup */
-#emailSignup{
+/* Testing Product */
+.productRelease{
+    margin: 1em 0 0.5em 0;
+    color: black;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 1s ease-in-out;
+}
+.productRelease:hover{
+    transform: scale(1.1)
 }
 
 /* Footer */
@@ -121,12 +124,26 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em;
+    margin: 0.5em 0.5em 0.1em 0.5em;
+}
+footer h1{
+    font-size: 2rem;
+    margin: 0;
+    padding-right: 1em;
+}
+.contactTag{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.contactTag a img{
+    width: 4vw;
+    height: 4vw;
 }
 .social{
     text-decoration: none;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
     transition: transform 1s ease-in-out;
 }
 .social:hover{
