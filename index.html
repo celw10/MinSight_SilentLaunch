@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+<!-- 
+============================================================================
+HEAD
+============================================================================
+-->
+
+<head>
+
+    <!-- Include metadata about HTML document -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <!-- Site name -->
+    <title> GetCodingProjectProposal </title>
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link JS -->
+    <script src="js/app.js" defer> </script>
+
+</head>
+
+<!-- 
+============================================================================
+BODY
+============================================================================
+-->
+
+<body>
+
+    <!-- 
+    ============================================================================
+    COMPANY NAME, NAV TAB
+    ============================================================================
+    -->
+    
+    <nav> 
+        <!-- Company name with corporate one liner -->
+        <h1>
+            MinSight: <em> Mineral Exploration data compilation for efficent mineral exploraiton. </em>
+        </h1>
+    </nav>
+
+    <!-- 
+    ============================================================================
+    MAIN CONTENT DIV
+    ============================================================================
+    -->
+
+    <div id="container">
+
+        <div id="pitch">
+
+            <!-- Problem, two bullets, general then concise -->
+            <h3> The Problem </h3>
+            <ul>
+                <li> What is the problem - GENERAL (there is a lot of historic data that isnt used) </li>
+                <li> Root Cause - Cost, time, different provincial jurisdictions, unaware missing data </li>
+            </ul>
+
+            <!-- How we plan on fixing the problem -->
+            <h3> Our Solution </h3>
+            <ol>
+                <li> LEVERAGE ... new developments in ... </li>
+                <li> EASY ACCESS ... GIS based applicaiton with pre-built database for easy data selection and download. </li>
+            </ol>
+            
+            <!-- Provide reason that this problem is important and needs our soluiton -->
+            <h3> Why this is Important </h3>
+            <ol>
+                <li> Efficency: Full record of past precident ensures exploraiton is as efficent as possible, the ball is in the company's managements court. </li>
+                <li> ESG: Don't re-do what you ahve to, lessen environmental impact </li>
+                <li> Critical Minerals: Historic mineral showings not economic but now are? </li>
+                <li> Investor Confidence: Mineral exploraiton companies require investment. Share this data with investors to increase confidence, and ensure the companies more likely to succeed are well funded. </li>
+            </ol>
+
+        </div>
+
+        <!-- 
+        ============================================================================
+        PITCH DECK
+        ============================================================================
+        -->
+
+        <div id="slideShow">
+
+            <!-- Each slide as image -->
+            <div class="slides fade" id="slide1">
+                <img class="slideShowImages" src="./slides/Slide1.png" alt="Title slide"> 
+            </div>
+
+            <div class="slides fade" id="slide2">
+                <img class="slideShowImages" src="./slides/Slide2.png" alt="The idea">
+            </div>
+
+            <div class="slides fade" id="slide3" > 
+                <img class="slideShowImages" src="./slides/Slide3.png" alt="How I came up with this idea 1/2"> 
+            </div>
+
+            <div class="slides fade" id="slid4">
+                <img class="slideShowImages" src="./slides/Slide4.png" alt="How I cam up with this idea 2/2"> 
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Circles/Dots -->
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <!-- 
+        ============================================================================
+        EMAIL SIGNUP LIST
+        ============================================================================
+        -->
+
+        <div id="emailSignup">
+
+            <!-- Label for email signup -->
+            <label for="email">
+                Provide you email for updates!
+            </label>
+    
+            <!-- Input for email -->
+            <input type="email" id="email">
+    
+            <!-- Submit button to send email to signup list -->
+            <button id="submitEmail" onclick="emailToList()">
+                <strong> submit </strong>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- 
+    ============================================================================
+    FOOTER
+    ============================================================================
+    -->
+
+    <footer>
+
+        <!-- Contact links for Chris Williams -->
+        <p> Contact Co-Founder and CEO Chris Williams </p>
+
+        <a href="https://www.linkedin.com/in/celw10/" class="social"> 
+            <img src="./images/linkedin_icon2.png" width="64" height="64" alt="linkedin" > 
+        </a>
+
+        <a href="https://github.com/celw10" class="social"> 
+            <img src="./images/github.png" width="64" height="64" alt="github" > 
+        </a>
+
+        <a href="mailto:celw10@mun.ca" class="social"> 
+            <img src="./images/email_icon.png" width="64" height="64" alt="email" > 
+        </a>  
+        
+        <!-- Contact links for Brandon Randell I NEED BRANDON'S -->
+        <p> Contact Co-Founder and COO Brandon Randell </p>
+        <a href="https://www.linkedin.com/in/celw10/" class="social"> 
+            <img src="./images/linkedin_icon2.png" width="64" height="64" alt="linkedin" > 
+        </a>
+
+        <a href="mailto:brandell88@gmail.com" class="social"> 
+            <img src="./images/email_icon.png" width="64" height="64" alt="email" > 
+        </a>  
+
+        <!-- Link to latest beta release -->
+        <p> Check out our latest Beta release </p>
+
+    </footer>
+
+</body>

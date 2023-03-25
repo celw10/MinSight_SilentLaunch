@@ -1,0 +1,134 @@
+/* ============================================================================
+/* Container Styling
+/* ============================================================================
+  
+/* Font family for entire document */
+*{
+    font-family: sans-serif;
+}
+
+/* HTML Style */
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+  }
+
+/* ============================================================================
+/* Body Styling
+/* ============================================================================
+
+/* Nav Header */
+nav {
+    display: flex;
+    align-items: center;
+    margin: 2vw;
+}
+nav h1 {
+    font-size: 24px;
+}
+
+/* Container for page content */
+#container {
+    width: 80vw;
+    align-items: center;
+    padding: 1vw;
+    margin: auto;
+}
+
+/* pitch point styling - maybe cover this in the */
+#pitch{
+    display: none;
+}
+
+/* Pitch slides styling */
+#slideShow{
+    width: 50vw;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+.rockTypeContainers{
+    display: none;
+    overflow: hidden;
+}
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.dots{
+    position: absolute;
+    width: 50vw;
+    bottom: 10px;
+    text-align: center;
+}
+.dot{
+    height: 22px;
+    width: 22px;
+    margin: 5px 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* Slide Images */
+.slideShowImages{
+    width: 50vw;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+/* Email Signup */
+#emailSignup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+.social{
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: transform 1s ease-in-out;
+}
+.social:hover{
+    transform: scale(1.1)
+}
