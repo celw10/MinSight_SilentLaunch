@@ -37,11 +37,6 @@ nav h1 {
     margin: auto;
 }
 
-/* pitch point styling - maybe cover this in the */
-#pitch{
-    display: none;
-}
-
 /* Pitch slides styling */
 #slideShow{
     width: 65vw;
