@@ -70,7 +70,7 @@ nav h1 {
 .dots{
     position: absolute;
     width: 65vw;
-    bottom: 0;
+    bottom: -1.5em;
     text-align: center;
 }
 .dot{
@@ -105,7 +105,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.5em 0.5em 0.1em 0.5em;
+    margin: 2em 0.5em 0.1em 0.5em;
 }
 footer h1{
     font-size: 2rem;
