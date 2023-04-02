@@ -24,7 +24,7 @@ html, body {
 nav {
     display: flex;
     align-items: center;
-    margin: 0.5em 1em 0.5em 1em;
+    margin: 1em;
 }
 nav h1 {
     font-size: 2rem;
@@ -39,7 +39,7 @@ nav h1 {
 
 /* Pitch slides styling */
 #slideShow{
-    width: 65vw;
+    width: 70vw;
     position: relative;
     margin: auto;
 }
@@ -69,7 +69,7 @@ nav h1 {
 }
 .dots{
     position: absolute;
-    width: 65vw;
+    width: 70vw;
     bottom: -1.5em;
     text-align: center;
 }
@@ -95,7 +95,7 @@ nav h1 {
 }
 /* Slide Images */
 .slideShowImages{
-    width: 65vw;
+    width: 70vw;
     margin: auto;
     display: block;
 }
