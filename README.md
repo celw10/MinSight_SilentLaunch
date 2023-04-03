@@ -1,8 +1,8 @@
-Minsight
+Minsight: A Geologic Database for Modern Mineral Exploraiton
 
 Silent launch for mine and Brandon Randell's startup idea!
 
-We aiming to make historical geologic data more publically avaliable!
+We are aiming to make historical geologic data more publically avaliable!
 
 Check us out here:
 
